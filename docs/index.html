@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>关于春节前后盗窃案件的预警</h1>
+<p>2021-02-19 <br />
+—————————————————————————————<br />
+春节前后往往是盗窃案件的高发期。在这特殊的时间段，很多不法的分子，想在这时发一笔横财，以便过一个好年。</p>
+<p>2021年1月24日，初某报警称在彭埠地区某商场停车库的一辆白色奔驰汽车，被人以拉开车门的方式盗走放在后备箱内的珠宝共计损失56046元。</p>
+<p>2021年1月30日，张某报警称在笕桥地区电动车停放点的一辆未上锁黑色菲利普电动车被人以推车盗车方式窃走。</p>
+<p>2021年1月29日，王某报警称在四季青某超市内货架上的猪蹄被人以柜台窃物的方式盗走，共计损失600元。</p>
+<p>2021年1月26日，丁某报警称在九堡地区某店铺内，被人趁事主离开之际顺手盗走放在电脑桌上的一部vivo手机。</p>
+<p>针对以往春节前后案件分析，梳理出三类在春节期间易发案的案件：入户（入室）盗窃、盗窃机动车及车内物品、盗窃营业期间店铺。为了减少群众的损失，请收好这份防盗指南。</p>
+<p>一、入户（入室）盗窃</p>
+<p>春节期间外来打工者们都已经回老家过年，居住地也都处于无人看管的状态，目前较多出租房屋使用的都是等级较低的锁，易被侵入。本地居民在假期忙于走亲访友，家中也长时间处于空档状态，因春节需要本地人多少都会在家中存放贵重物品，这些都是让犯罪分子铤而走险实施犯罪的动机。</p>
+<p>二、盗窃机动车及车内物品</p>
+<p>流动人口回家过年时车辆没有固定停放点，只能将车辆停放在户外，且有较多人员未锁车，钥匙未拔，不关车窗的习惯，这也使犯罪分子有机可乘。</p>
+<p>三、盗窃营业期间店铺</p>
+<p>春节期间免不了互送礼品，而超市、商场、市场、沿街的商户们也瞅准这一商机，大批量囤货、销货，打算赚个盆满钵满。而不法分子也瞅准时机，趁着人流实施盗窃行为。</p>
+<p>警方提醒广大群众：提高警惕，预防盗窃。</p>
+<p>1、外出或夜间在家休息时，一定要将阳台和居室的窗户关上并锁好插锁，反锁好防盗门，家中自装可以手机联网查看的监控探头，防止入户盗窃、抢劫等行为发生。</p>
+<p>2、长期外出时，注意关闭卫生间、阳台、厨房等水管阀门以及主管道阀门；贵重物品请自行采取妥善的保管措施，家中勿存放大量现金，妥善保管相关证件和钥匙，以免被盗。</p>
+<p>3、汽车停放后，仔细检查车门玻璃是否关好，一定注意要锁住方向盘、关好车窗，锁好车门、勿忘拔下车钥匙；电动车（自行车）不要乱停放，尽量停放在视频监控覆盖区域或有专人看管的区域，车辆停放必须上锁。</p>
+<p>4、外出时注意人身安全，妥善保管随身携带的现金和物品，财不可外露，不要当众翻弄财务，做到财务不离视线，包不离手（身）。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
